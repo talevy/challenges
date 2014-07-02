@@ -1,3 +1,4 @@
+from __future__ import print_function
 import collections
 import sys
 
@@ -24,4 +25,5 @@ for linenum, line in enumerate(sys.stdin):
 
 update_counts(1, nodes, counts)
 
-print cut_even_forest(1, nodes, counts)
+print(cut_even_forest(1, nodes, counts), end='')
+
