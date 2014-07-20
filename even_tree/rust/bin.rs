@@ -52,7 +52,7 @@ fn main() {
                 .map(|x| {
                     from_str::<uint>(x).unwrap()
                 }).collect::<Vec<uint>>();
-            (*ln.get(1), *ln.get(0))
+            (ln[1], ln[0])
         }).collect::<CountsTree>();
 
     let (num, _) = tree.cut_even_forest(1);

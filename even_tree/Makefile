@@ -1,7 +1,7 @@
 check: python-check rust-check
 
 python-check:
-	python python/main.py < input > python.out
+	python python/main.py < input | tee python.out
 	diff python.out output
 
 python-clean:
@@ -9,7 +9,7 @@ python-clean:
 
 rust-check:
 	rustc rust/bin.rs -o rust/bin
-	rust/bin < input > rust.out
+	rust/bin < input | tee rust.out
 	diff rust.out output
 
 rust-clean:
