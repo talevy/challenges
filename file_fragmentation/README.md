@@ -1,3 +1,6 @@
+NOT DONE(TODO)
+==============
+
 File Fragmentation [[1](http://uva.onlinejudge.org/index.php?option=com_onlinejudge&Itemid=8&page=show_problem&problem=1073)]
 ==================
 
